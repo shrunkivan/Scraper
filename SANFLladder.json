@@ -1,0 +1,54 @@
+[
+  {
+    "POS": "1",
+    "TEAM": "Huonville Lions U18 Boys",
+    "P": 12,
+    "W": 10,
+    "L": 1,
+    "D": 0,
+    "B": 1,
+    "F": 0,
+    "AGST": 901,
+    "PCT": 294.0,
+    "PTS": 40
+  },
+  {
+    "POS": "2",
+    "TEAM": "Southern Storm U18 Boys",
+    "P": 12,
+    "W": 9,
+    "L": 2,
+    "D": 0,
+    "B": 1,
+    "F": 0,
+    "AGST": 805,
+    "PCT": 425.0,
+    "PTS": 36
+  },
+  {
+    "POS": "3",
+    "TEAM": "Sorell U18 Boys",
+    "P": 12,
+    "W": 2,
+    "L": 9,
+    "D": 0,
+    "B": 1,
+    "F": 0,
+    "AGST": 409,
+    "PCT": 666.0,
+    "PTS": 8
+  },
+  {
+    "POS": "4",
+    "TEAM": "Hobart U18 Boys",
+    "P": 12,
+    "W": 1,
+    "L": 10,
+    "D": 0,
+    "B": 1,
+    "F": 0,
+    "AGST": 251,
+    "PCT": 981.0,
+    "PTS": 4
+  }
+]
