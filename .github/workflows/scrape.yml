@@ -1,0 +1,30 @@
+name: Daily Scrape
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Runs daily at 3 AM UTC
+  workflow_dispatch:      # Allow manual runs
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install selenium beautifulsoup4 webdriver-manager
+      
+      - name: Run scraper
+        run: python scraper.py
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add *.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update ladder data"
+          git push
